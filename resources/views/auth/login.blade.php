@@ -125,7 +125,7 @@
                 <div class="flex items-center gap-3">
                     <span class="text-xs text-blue-600 font-medium w-16">Password:</span>
                     <code
-                        class="text-sm font-bold bg-white px-3 py-1.5 rounded-md shadow-sm text-gray-800 select-all border border-blue-100">manager123</code>
+                        class="text-sm font-bold bg-white px-3 py-1.5 rounded-md shadow-sm text-gray-800 select-all border border-blue-100">password</code>
                 </div>
             </div>
         </div>
