@@ -1,0 +1,17 @@
+{
+    "name": "PRR PLN Sukabumi",
+    "short_name": "PRR PLN",
+    "description": "Aplikasi pencarian status PRR PLN ULP Sukabumi",
+    "start_url": "/dashboard",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0a1f44",
+    "icons": [
+        {
+            "src": "/app-icon.svg",
+            "sizes": "192x192 512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
