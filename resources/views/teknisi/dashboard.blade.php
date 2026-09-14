@@ -7,7 +7,7 @@
     
     {{-- Top Greeting (Desktop only or optional) --}}
     <div class="hidden md:flex items-center gap-3 mb-4">
-        <h1 class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">Halo, {{ explode(' ', Auth::user()->name ?? 'Petugas')[0] }}</h1>
+        <h1 class="text-3xl font-black text-gray-900 dark:text-white tracking-tight">Halo, {{ explode(' ', Auth::user()->nama_petugas ?? 'Petugas')[0] }}</h1>
         <div class="flex items-center gap-1.5 px-3 py-1 bg-green-50 dark:bg-green-900/30 rounded-full border border-green-200 dark:border-green-800">
             <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
             <span class="text-xs font-bold text-green-700 dark:text-green-400">Petugas Online</span>
