@@ -104,8 +104,6 @@
                     <div class="flex flex-wrap gap-2">
                         <code
                             class="text-sm font-bold bg-white px-3 py-1.5 rounded-md shadow-sm text-gray-800 select-all border border-blue-100">audri</code>
-                        <code
-                            class="text-sm font-bold bg-white px-3 py-1.5 rounded-md shadow-sm text-gray-800 select-all border border-blue-100">janedoe</code>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
