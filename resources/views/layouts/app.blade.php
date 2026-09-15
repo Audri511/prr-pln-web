@@ -53,13 +53,13 @@
         <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300"></div>
         <aside id="desktop-sidebar" class="flex flex-col bg-white dark:bg-slate-800 border-r border-gray-100 dark:border-slate-700 min-h-screen fixed left-0 top-0 z-50 shadow-sm transition-all duration-300 transform -translate-x-full md:translate-x-0 md:w-20 w-64">
                         <div id="sidebar-header" class="p-4 md:p-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between relative">
-                <div class="flex items-center gap-3">
+                <a href="{{ route('dashboard') }}" class="flex items-center gap-3">
                     <img src="{{ asset('image/logo-pln.png') }}" alt="Logo PLN" class="w-8 h-8 md:w-10 md:h-10 object-contain flex-shrink-0" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_PLN.png'">
                     <div class="sidebar-text opacity-0 hidden transition-opacity duration-300 whitespace-nowrap">
                         <p class="font-black text-[#0a1f44] dark:text-white text-sm leading-tight tracking-wide">PLN ULP</p>
                         <p class="text-[10px] text-gray-500 dark:text-slate-400 font-semibold tracking-wider">SUKABUMI KOTA</p>
                     </div>
-                </div>
+                </a>
                 <!-- Absolute toggle button sticking out or on the right edge -->
                 <button id="sidebar-toggle" class="hidden md:flex absolute -right-3.5 top-8 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-full text-gray-400 hover:text-[#0a1f44] shadow-sm hover:shadow-md transition-all z-50 flex items-center justify-center w-7 h-7 flex">
                     <svg class="w-4 h-4 transition-transform duration-300 rotate-180" id="sidebar-toggle-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -128,10 +128,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-                    <div class="flex items-center gap-2">
+                    <a href="{{ route('dashboard') }}" class="flex items-center gap-2">
                         <img src="{{ asset('image/logo-pln.png') }}" alt="Logo PLN" class="w-8 h-8 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/97/Logo_PLN.png'">
                         <span class="text-sm font-black text-[#0a1f44] dark:text-white tracking-widest hidden sm:block">PLN</span>
-                    </div>
+                    </a>
                 </div>
 
                 {{-- Right Side: Profile Button & Notifications --}}
@@ -154,7 +154,7 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="opacity-100 scale-100"
                              x-transition:leave-end="opacity-0 scale-95"
-                             class="absolute right-0 mt-2 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-100 dark:border-slate-700 overflow-hidden z-50"
+                             class="absolute -right-12 sm:right-0 mt-2 w-[320px] sm:w-80 bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-gray-100 dark:border-slate-700 overflow-hidden z-50 origin-top-right"
                              style="display: none;">
                              
                              <div class="px-4 py-3 border-b border-gray-100 dark:border-slate-700 flex justify-between items-center bg-gray-50/50 dark:bg-slate-800/50">

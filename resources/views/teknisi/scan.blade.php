@@ -8,9 +8,9 @@
     {{-- Header --}}
     <div class="p-6 border-b border-gray-100 dark:border-slate-700 flex items-center justify-between bg-gradient-to-r from-[#0a1f44] to-[#1a365d] text-white">
         <div class="flex items-center gap-3">
-            <a href="{{ route('dashboard') }}" class="p-2 bg-white dark:bg-slate-800/10 hover:bg-white dark:bg-slate-800/20 rounded-full transition-colors">
+            <a href="{{ route('dashboard') }}" class="p-2 bg-white text-[#0a1f44] hover:bg-gray-100 rounded-full transition-colors shadow-sm">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
             </a>
             <h1 class="text-xl font-bold tracking-wide">Scanner Kamera</h1>
