@@ -38,14 +38,12 @@ class LaporanController extends Controller
         }
 
         if ($start_date && $end_date) {
-            $query->whereBetween('created_at', [
-                \Carbon\Carbon::parse($start_date)->startOfDay(),
-                \Carbon\Carbon::parse($end_date)->endOfDay()
-            ]);
+            $query->whereDate('created_at', '>=', $start_date)
+                  ->whereDate('created_at', '<=', $end_date);
         } elseif ($start_date) {
-            $query->whereDate('created_at', '>=', \Carbon\Carbon::parse($start_date)->startOfDay());
+            $query->whereDate('created_at', '>=', $start_date);
         } elseif ($end_date) {
-            $query->whereDate('created_at', '<=', \Carbon\Carbon::parse($end_date)->endOfDay());
+            $query->whereDate('created_at', '<=', $end_date);
         }
 
         $laporans = $query->get();
@@ -55,14 +53,12 @@ class LaporanController extends Controller
         $cardQuery = LaporanPasangBaru::query();
         
         if ($start_date && $end_date) {
-            $cardQuery->whereBetween('created_at', [
-                \Carbon\Carbon::parse($start_date)->startOfDay(),
-                \Carbon\Carbon::parse($end_date)->endOfDay()
-            ]);
+            $cardQuery->whereDate('created_at', '>=', $start_date)
+                      ->whereDate('created_at', '<=', $end_date);
         } elseif ($start_date) {
-            $cardQuery->whereDate('created_at', '>=', \Carbon\Carbon::parse($start_date)->startOfDay());
+            $cardQuery->whereDate('created_at', '>=', $start_date);
         } elseif ($end_date) {
-            $cardQuery->whereDate('created_at', '<=', \Carbon\Carbon::parse($end_date)->endOfDay());
+            $cardQuery->whereDate('created_at', '<=', $end_date);
         }
 
         // Keep variable names same for backward compatibility in view, but meaning is now "Filtered"
